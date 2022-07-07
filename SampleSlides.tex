@@ -1,0 +1,80 @@
+%Sample Beamer Slides
+\documentclass[10pt,compress,xcolor={usenames,dvipsnames},aspectratio=169]{beamer}
+
+\usetheme{FJHSlimNoFoot169}
+\usepackage[euler-digits,euler-hat-accent]{eulervm} %Euler font for math
+\usepackage{tgadventor} %TEX Gyre Adventor, Font found at https://tug.org/FontCatalogue/
+%\usepackage{newpxtext} %For Palatino text
+
+\usepackage{amsmath,
+	amssymb,
+	datetime,
+	mathtools,
+	bbm,
+	%mathabx,
+	array,
+	booktabs,
+	xspace,
+	multirow,
+	calc,
+	colortbl,
+	siunitx,
+ 	graphicx}
+\usepackage[usenames]{xcolor}
+\usepackage[giveninits=false,backend=biber,style=nature, maxcitenames =10, mincitenames=9]{biblatex}
+\addbibresource{FJHown23.bib}
+\addbibresource{FJH23.bib}
+\usepackage{media9}
+\usepackage[autolinebreaks]{mcode}
+\usepackage[tikz]{mdframed}
+
+
+\setlength{\parskip}{2ex}
+\setlength{\arraycolsep}{0.5ex}
+
+
+\providecommand{\HickernellFJ}{H.\xspace}
+
+
+\renewcommand{\OffTitleLength}{-7ex}
+\setlength{\FJHThankYouMessageOffset}{-8ex}
+\title{Research Projects}
+\author[]{GAIL/QMCPy/GAAPy Group}
+\institute{Department of Applied Mathematics \qquad
+	Center for Interdisciplinary Scientific Computation \\
+	Illinois Institute of Technology \qquad
+	\href{mailto:hickernell@iit.edu}{\url{hickernell@iit.edu}} \qquad
+	\href{http://mypages.iit.edu/~hickernell}{\url{mypages.iit.edu/~hickernell}}}
+
+\thanksnote{}
+	
+%\event{Happy Fred}
+\date[]{ revised \today}
+
+\input FJHDef.tex
+
+
+
+\begin{document}
+	\everymath{\displaystyle}
+
+\frame{\titlepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Draft Manuscript}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Adaptive RKHS Function Approximation}
+Investigators:  Yuhan Ding, Fred Hickernell, Mac Hyman
+
+\url{https://www.overleaf.com/2448332162phfqgdrtdnhs}
+   
+   
+\[
+f(x) =  \exp(-x^2)
+\]
+\end{frame}
+
+\end{document}

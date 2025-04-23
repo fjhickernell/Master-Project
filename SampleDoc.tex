@@ -12,6 +12,12 @@ citecolor=blue}
 \usepackage[usenames]{xcolor}
 \usepackage[capitalise]{cleveref}
 
+\usepackage{ulem,xpatch}
+\xpatchcmd{\sout} %a thicker strikeout
+  {\bgroup}
+  {\bgroup\def\ULthickness{1.5pt}}
+  {}{}
+
 \usepackage{algpseudocode}
 \usepackage{algorithm, algorithmicx}
 \algnewcommand\algorithmicparam{\textbf{Parameters:}}
@@ -88,6 +94,8 @@ $\vx \bigcdot \vy$
 References from the same proceedings \cite{HicJim16a,JimHic16a}, but the cross-referenced proceedings volume is not included because of the \texttt{latexmkrc} file.
 
 Emphasize \citeColored{red}{Hic97a} or don't emphasize \cite{Hic97a}.
+
+This is a \sout{thicker strike out} in case it is needed
 
 \bibliographystyle{amsplain}
 \bibliography{FJH23,FJHown23}
